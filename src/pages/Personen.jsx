@@ -42,11 +42,12 @@ const Personen = () => {
                     <th>Name</th>
                     <th>Firma</th>
                     <th>Abteilung</th>
-                    <th>Aktionen</th>
                 </tr>
                 </thead>
                 <tbody>
-                {personen.map((person, index) => (
+                {personen
+                    .filter(person => person.firma !="" & person.abteilung != "" )
+                    .map((person, index) => (
                     <tr key={index}>
                         <td>{person.id}</td>
                         <td>{person.name}</td>
