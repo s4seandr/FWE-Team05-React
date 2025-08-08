@@ -4,12 +4,10 @@ const Navigation = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
-                {/* Branding */}
                 <Link className="navbar-brand" to="/">
-                    Fortgeschrittene Webentwicklung Sommer 2025
+                    FWE Team 05
                 </Link>
 
-                {/* Burger-Button für kleine Screens */}
                 <button
                     className="navbar-toggler"
                     type="button"
