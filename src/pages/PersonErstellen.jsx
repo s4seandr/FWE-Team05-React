@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client';
 
 function PersonErstellen() {
     const [name, setName] = useState('');
@@ -9,7 +8,7 @@ function PersonErstellen() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert('Der eingetragene Name war: $(vorname) $(name)')
+        alert(`Der eingetragene Name war: ${vorname} ${name}`)
     };
 
     return (
